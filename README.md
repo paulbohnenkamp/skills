@@ -33,7 +33,7 @@ This repository is intended to be public and reusable.
 
 ## Install
 
-Run the skills installer:
+Install this skill library into your Codex setup:
 
 ```bash
 npx skills@latest add paulbohnenkamp/skills
