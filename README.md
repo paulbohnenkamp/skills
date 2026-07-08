@@ -9,12 +9,16 @@ Each skill lives in its own folder and focuses on one repeatable workflow.
 - [repo-handoff-workflow](./repo-handoff-workflow/): reusable guidance for repos that separate reference docs from active plans
 - [feature-definition](./feature-definition/): turn an idea or rough request into a durable spec
 - [plan-workflow](./plan-workflow/): turn a spec into an implementation plan with verification and status tracking
+- [verification-loop](./verification-loop/): select, run, and interpret the right checks before calling a slice done
+- [handoff-summary](./handoff-summary/): write a compact continuation note for the next session
 
 ## Suggested flow
 
 1. Orient to the repo with [repo-handoff-workflow](./repo-handoff-workflow/).
 2. Define the feature with [feature-definition](./feature-definition/).
 3. Turn the spec into a plan with [plan-workflow](./plan-workflow/).
+4. Verify the slice with [verification-loop](./verification-loop/).
+5. Leave a note with [handoff-summary](./handoff-summary/).
 
 ## How to add a skill
 
