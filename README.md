@@ -6,15 +6,15 @@ Each skill lives in its own folder and focuses on one repeatable workflow.
 
 ## Current skills
 
-- `repo-handoff-workflow`: reusable guidance for repos that separate reference docs from active plans
-- `feature-definition`: turn an idea or rough request into a durable spec
-- `plan-workflow`: turn a spec into an implementation plan with verification and status tracking
+- [repo-handoff-workflow](./repo-handoff-workflow/): reusable guidance for repos that separate reference docs from active plans
+- [feature-definition](./feature-definition/): turn an idea or rough request into a durable spec
+- [plan-workflow](./plan-workflow/): turn a spec into an implementation plan with verification and status tracking
 
 ## Suggested flow
 
-1. Orient to the repo with `repo-handoff-workflow`.
-2. Define the feature with `feature-definition`.
-3. Turn the spec into a plan with `plan-workflow`.
+1. Orient to the repo with [repo-handoff-workflow](./repo-handoff-workflow/).
+2. Define the feature with [feature-definition](./feature-definition/).
+3. Turn the spec into a plan with [plan-workflow](./plan-workflow/).
 
 ## How to add a skill
 
