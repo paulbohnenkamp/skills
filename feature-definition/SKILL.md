@@ -11,6 +11,8 @@ Use this skill when a request needs to become a stable spec before implementatio
 
 - A good spec captures the problem, not just the desired fix.
 - A spec should be stable enough for planning and implementation to follow.
+- Repo-local spec docs, if present, override the skill defaults for that repository.
+- Skill-local references provide the fallback spec structure when repo-local spec docs are missing.
 - A spec should separate intended behavior from execution details.
 - Acceptance criteria should be concrete enough to verify later.
 
@@ -18,8 +20,11 @@ Use this skill when a request needs to become a stable spec before implementatio
 
 1. Clarify the feature goal in one sentence.
 2. Identify the user story or primary use case.
-3. List the important inputs, outputs, and constraints.
-4. Define acceptance criteria that can be tested or reviewed.
+3. Check for repo-local spec docs first, such as `docs/specs/README.md` and `docs/specs/index.md`.
+4. If repo-local spec docs exist, follow them for naming, placement, and tone.
+5. If they do not exist, use the skill-local references in `references/` and any templates in `assets/`.
+6. List the important inputs, outputs, and constraints.
+7. Define acceptance criteria that can be tested or reviewed.
 
 ## Working rule
 
@@ -44,4 +49,3 @@ Consider a spec ready when:
 - "Turn this idea into a feature definition"
 - "Clarify the requirements before planning"
 - "Draft the acceptance criteria"
-
