@@ -1,6 +1,6 @@
 # Skills
 
-This repository is a reusable library of Codex skills.
+This repository is a reusable library of agent skills.
 
 Each skill lives in its own folder and focuses on one repeatable workflow.
 
