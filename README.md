@@ -26,3 +26,11 @@ Each skill lives in its own folder and focuses on one repeatable workflow.
 ## License
 
 This repository is intended to be public and reusable.
+
+## Install
+
+Run the skills installer:
+
+```bash
+npx skills@latest add paulbohnenkamp/skills
+```
