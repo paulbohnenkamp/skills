@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature Definition"
+  short_description: "Turn feature ideas into durable specifications"
+  default_prompt: "Use $feature-definition to turn this request into a scoped specification with acceptance criteria."

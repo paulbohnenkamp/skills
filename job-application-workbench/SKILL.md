@@ -1,8 +1,6 @@
 ---
 name: job-application-workbench
 description: Use when building or operating a job application workflow that ingests job descriptions, compares them to an applicant profile, generates tailored resume artifacts, and tracks submission status in a manifest-driven folder structure.
-metadata:
-  short-description: Job application workflow and manifest tracking
 ---
 
 # Job Application Workbench
@@ -12,7 +10,7 @@ Use this skill when the user wants to turn one or more job descriptions into tai
 ## Core workflow
 
 1. Read the applicant profile, resume rules, and any existing job manifest.
-2. Ingest the job description from a pasted URL, raw markdown, or a local snapshot.
+2. Ingest the job description from pasted text, a local snapshot, or a URL. If given a URL, retrieve it before analyzing and preserve a local snapshot when permitted.
 3. Extract role requirements, nice-to-haves, and signals that matter for tailoring.
 4. Compare the job against the applicant profile and identify evidence-backed matches.
 5. Generate the requested artifacts, usually:
@@ -20,7 +18,7 @@ Use this skill when the user wants to turn one or more job descriptions into tai
    - `fit-notes.md`
    - `cover-letter.md` if requested
    - `manifest.json`
-6. Save outputs in a dated job folder.
+6. Save outputs in a dated job folder only when the user asked to create or update artifacts; otherwise return the analysis without writing files.
 7. Update submission status as the job moves through the pipeline.
 
 ## Folder convention
@@ -52,6 +50,8 @@ jobs/
 
 Keep a manifest for each application so the workflow survives later sessions and job postings that disappear.
 
+Read [references/manifest-schema.md](references/manifest-schema.md) for field semantics. Copy [assets/manifest-template.json](assets/manifest-template.json) when creating a manifest. Preserve unknown fields when updating an existing manifest, and use ISO 8601 dates (`YYYY-MM-DD`).
+
 Track at least:
 - job title
 - company
@@ -80,3 +80,5 @@ Prefer statuses like:
 - Prefer concise, specific matching notes over generic claims.
 - If a source URL may disappear, snapshot the job description locally.
 - If the user asks for a resume draft, tailor it to the job without changing truthfulness.
+- Treat a fit score as an optional heuristic, not an objective fact; explain its basis when one is included.
+- Never submit an application, contact an employer, or change submission status to `submitted` without explicit user authorization.

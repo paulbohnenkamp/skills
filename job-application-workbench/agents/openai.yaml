@@ -1,0 +1,4 @@
+interface:
+  display_name: "Job Application Workbench"
+  short_description: "Tailor and track truthful job application artifacts"
+  default_prompt: "Use $job-application-workbench to analyze this role and create evidence-backed application artifacts."

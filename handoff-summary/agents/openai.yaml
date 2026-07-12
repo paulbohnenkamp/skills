@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handoff Summary"
+  short_description: "Create concise, trustworthy continuation notes"
+  default_prompt: "Use $handoff-summary to capture the current state, verification, risks, and next step."

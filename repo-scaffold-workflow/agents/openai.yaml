@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Scaffold Workflow"
+  short_description: "Create durable, agent-friendly repository scaffolds"
+  default_prompt: "Use $repo-scaffold-workflow to create a minimal repository scaffold with durable specs and plans."

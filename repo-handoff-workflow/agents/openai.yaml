@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Handoff Workflow"
+  short_description: "Resume repository work from durable handoff docs"
+  default_prompt: "Use $repo-handoff-workflow to orient to this repository and resume its active work safely."

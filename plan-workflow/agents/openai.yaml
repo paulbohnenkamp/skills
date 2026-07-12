@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Workflow"
+  short_description: "Create durable implementation plans and track status"
+  default_prompt: "Use $plan-workflow to turn this scoped feature into a verifiable implementation plan."

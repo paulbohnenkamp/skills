@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coding Conventions"
+  short_description: "Repository coding rules and edit norms"
+  default_prompt: "Use $coding-conventions to align this change with the repo's coding conventions, edit discipline, and verification expectations."

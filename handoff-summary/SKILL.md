@@ -19,12 +19,15 @@ Use this skill when a session needs a short continuation note for another agent 
 2. List the important changes already made.
 3. Note verification status and blockers.
 4. Point to the next file, step, or decision.
+5. Use [references/template.md](references/template.md) for the required sections. Copy [assets/sample-handoff.md](assets/sample-handoff.md) only when a new handoff artifact is needed.
 
 ## Working rule
 
 - Keep the summary short enough to scan quickly.
 - Favor concrete file references and status over narrative detail.
 - Include only what the next session needs to continue safely.
+- Distinguish completed work from attempted or unverified work.
+- Never claim a check passed unless its result was observed.
 
 ## Completion rule
 
@@ -34,11 +37,3 @@ Consider the handoff ready when:
 - The next step is obvious.
 - Key files or paths are included.
 - Any unresolved risk is named.
-
-## Good triggers
-
-- "Write a handoff"
-- "Summarize the session"
-- "Leave a note for the next agent"
-- "Capture what changed"
-
