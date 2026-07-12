@@ -22,7 +22,7 @@ Use this skill when a request needs to become a stable spec before implementatio
 2. Identify the user story or primary use case.
 3. Check for repo-local spec docs first, such as `docs/specs/README.md` and `docs/specs/index.md`.
 4. If repo-local spec docs exist, follow them for naming, placement, and tone.
-5. If they do not exist, use the skill-local references in `references/` and any templates in `assets/`.
+5. If they do not exist, read [references/spec-guidance.md](references/spec-guidance.md).
 6. List the important inputs, outputs, and constraints.
 7. Define acceptance criteria that can be tested or reviewed.
 
@@ -31,7 +31,7 @@ Use this skill when a request needs to become a stable spec before implementatio
 - Keep the spec short and durable.
 - Avoid implementation details unless they are part of the product requirement.
 - Note out-of-scope items so the plan stays focused.
-- If the request is vague, clarify the smallest missing piece before writing the spec.
+- If the request is vague, inspect available repository context first; ask only when a missing choice would materially change the spec.
 
 ## Completion rule
 
@@ -42,10 +42,3 @@ Consider a spec ready when:
 - Inputs and outputs are named.
 - Acceptance criteria are explicit.
 - The spec can support a downstream implementation plan.
-
-## Good triggers
-
-- "Write a spec for this feature"
-- "Turn this idea into a feature definition"
-- "Clarify the requirements before planning"
-- "Draft the acceptance criteria"

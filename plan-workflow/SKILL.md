@@ -21,12 +21,13 @@ Use this skill when a repository tracks implementation work in plan files.
 1. Read the spec or source brief.
 2. Check for repo-local plan docs first: `plans/README.md`, `plans/TEMPLATE.md`, and `plans/index.md`.
 3. If repo-local plan docs exist, follow them.
-4. If they do not exist, use the skill-local references in `references/` and any templates in `assets/`.
+4. If they do not exist, read [references/workflow.md](references/workflow.md) and copy [assets/plan-template.md](assets/plan-template.md) when creating a plan file.
 5. Identify the smallest useful slice.
 6. Write or update the plan with goal, related roadmap item, context, scope, steps, acceptance criteria, verification, status, completion notes, outcome summary, and tooling notes.
 
 ## Working rule
 
+- Require a plan before non-trivial, multi-step, or session-spanning implementation work. Allow trivial low-risk edits and urgent diagnosis to proceed without a standalone plan unless repository-local instructions require one.
 - Keep plans focused on execution, not product brainstorming.
 - Make the verification path explicit.
 - Use the documented status lifecycle exactly.
@@ -42,10 +43,3 @@ Mark a plan done only when:
 - The active plan index reflects the completed status.
 - Any matching roadmap item is updated.
 - The plan file itself includes completion notes and an outcome summary.
-
-## Good triggers
-
-- "Turn this spec into a plan"
-- "Write the implementation plan"
-- "Update the plan and verification"
-- "Mark the slice complete"

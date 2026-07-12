@@ -19,6 +19,7 @@ Use this skill when a change needs explicit validation before it can be marked c
 2. Select the smallest useful checks that cover that behavior.
 3. Run the checks and capture the result.
 4. Note any gaps that remain if the checks do not fully prove completion.
+5. Use [references/checklist.md](references/checklist.md) to choose and record checks. Copy [assets/verification-template.md](assets/verification-template.md) only when verification notes should be persisted.
 
 ## Working rule
 
@@ -26,6 +27,8 @@ Use this skill when a change needs explicit validation before it can be marked c
 - Keep verification steps explicit and repeatable.
 - Separate local build health from feature-specific proof.
 - If the first check fails, narrow the failure before broadening the search.
+- Do not change implementation code while performing a review-only verification request; report the cause and ask or wait for authorization to fix it.
+- Do not mark work verified when a required check was skipped, unavailable, flaky, or failed.
 
 ## Completion rule
 
@@ -34,11 +37,4 @@ Consider a slice verified when:
 - The relevant checks pass.
 - The result lines up with the acceptance criteria.
 - Any known gaps are documented clearly.
-
-## Good triggers
-
-- "Verify this slice"
-- "Run the checks"
-- "Confirm the feature is done"
-- "Interpret the test failure"
 

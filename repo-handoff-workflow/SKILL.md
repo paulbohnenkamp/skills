@@ -23,6 +23,7 @@ Use this skill when a repository has durable reference docs and active implement
 
 ## Working rule
 
+- Require a plan before non-trivial, multi-step, or session-spanning implementation work. Allow trivial low-risk edits and urgent diagnosis to proceed without a standalone plan unless repository-local instructions require one.
 - Update reference docs when product intent or stable behavior changes.
 - Update plans when execution details, status, or verification change.
 - Keep specs and plans separate even when they refer to the same feature.
@@ -34,12 +35,4 @@ Mark work complete only when:
 - The plan acceptance criteria are satisfied.
 - Required tests or checks pass.
 - The plan index is updated.
-- The roadmap item is checked off.
-
-## Good triggers
-
-- "Pick up where we left off"
-- "Continue the next slice"
-- "Update the plan and roadmap"
-- "Work from the repo handoff docs"
-
+- The roadmap item is checked off when one exists and the repository uses roadmap tracking.

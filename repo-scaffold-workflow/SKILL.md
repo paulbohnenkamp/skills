@@ -1,8 +1,6 @@
 ---
 name: repo-scaffold-workflow
 description: Use when creating a new repository scaffold that follows the durable README, AGENTS.md, ROADMAP.md, docs/specs, and plans pattern used for long-lived agent-friendly projects.
-metadata:
-  short-description: Create a durable repo scaffold
 ---
 
 # Repo Scaffold Workflow
@@ -22,12 +20,12 @@ Create a clean repo scaffold with:
 
 ## Steps
 
-1. Pick the repo name and root directory.
+1. Determine the repo name and root directory from the request or current context; ask only when neither is safely inferable.
 2. Create the root docs first: `README.md`, `AGENTS.md`, `ROADMAP.md`.
 3. Add `docs/README.md` and `docs/specs/README.md` so reference docs stay separate from plans.
 4. Add `plans/README.md`, `plans/TEMPLATE.md`, and `plans/index.md` so active work has a single entry point.
 5. Add the product folders needed for the first slice.
-6. Initialize git if the repo is meant to be versioned immediately.
+6. Initialize git only when the user requested a new versioned repository and the target is not already inside a worktree.
 
 ## Defaults
 
@@ -61,4 +59,4 @@ repo-name/
 
 ## When to use references
 
-Read `references/scaffold-checklist.md` when you need a quick checklist for what to create.
+Read [references/scaffold-checklist.md](references/scaffold-checklist.md) before creating files, then adapt it to repository-local requirements.
